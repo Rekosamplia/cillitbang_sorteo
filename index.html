@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" href="uploads/logoCillit.png">
+<link rel="stylesheet" href="_ds/samplia-design-system-3b8c391a-4304-4ac7-a11b-0dd4cb4af9a4/colors_and_type.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+<script src="_ds/samplia-design-system-3b8c391a-4304-4ac7-a11b-0dd4cb4af9a4/_ds_bundle.js"></script>
+<script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { font-family: 'Barlow', sans-serif; -webkit-font-smoothing: antialiased; background: #4B1F7A; }
+  a { color: #E5D6FF; text-decoration: none; }
+  a:hover { color: #ffffff; }
+  /* ---- Desktop enhancements ---- */
+  @media (min-width: 860px) {
+    #cb-logo { width: 170px !important; top: 14px !important; left: 32px !important; }
+    #cb-titular-bar { padding: 26px 210px 22px !important; }
+    #cb-premios-grid { grid-template-columns: repeat(3, 1fr) !important; }
+    #cb-pasos-grid { grid-template-columns: repeat(3, 1fr) !important; }
+    #cb-footer-inner { max-width: 760px !important; }
+    #cb-cta-btn { width: auto !important; min-width: 340px; }
+  }
+</style>
+</helmet>
+<div style="min-height:100vh; position:relative; overflow-x:hidden; color:#fff; background:linear-gradient(180deg, #5B2A86 0%, #4B1F7A 60%, #38155E 100%);">
+
+  <!-- ============ HERO ============ -->
+  <section style="position:relative;">
+    <img id="cb-logo" src="uploads/logoCillit.png" alt="Cillit Bang Expert" style="position:absolute; top:8px; left:14px; width:96px; height:auto; z-index:5; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.45));">
+    <div id="cb-titular-bar" style="position:relative; z-index:2; background:#38155E; text-align:center; padding:18px 20px 16px 116px; padding-right:20px;">
+      <div style="font-family:'Montserrat',sans-serif; font-weight:900; text-transform:uppercase; font-size:clamp(20px,4.6vw,42px); line-height:1.08; letter-spacing:0.01em; text-shadow:0 3px 10px rgba(0,0,0,0.35);">Compra Cillit Bang y gana<br>hasta <span style="color:#FFE500;">100&nbsp;€</span> en premios</div>
+      <div style="margin-top:8px; display:inline-block; background:#FFE500; color:#4B1F7A; font-weight:800; font-size:clamp(13px,3.2vw,17px); text-transform:uppercase; letter-spacing:0.04em; padding:5px 16px 6px; border-radius:999px;">Se reparten 150 premios</div>
+    </div>
+    <img src="uploads/header.png" alt="Únete al #RetoBang — gama Cillit Bang Expert" style="display:block; width:100%; height:auto;">
+  </section>
+
+  <!-- ============ PREMIOS ============ -->
+  <section style="max-width:1180px; margin:0 auto; padding:34px 20px 10px;">
+    <h2 style="margin:0 0 6px; font-family:'Montserrat',sans-serif; font-weight:900; text-transform:uppercase; font-size:clamp(24px,5.4vw,40px); text-align:center; line-height:1.05;">¿Qué puedes ganar?</h2>
+    <p style="margin:0 auto 22px; max-width:560px; text-align:center; font-size:clamp(15px,3.6vw,17px); color:#E5D6FF; line-height:1.4;">Cuantos más productos Cillit Bang compres en un mismo ticket, mayor será tu premio.</p>
+    <div id="cb-premios-grid" style="display:grid; grid-template-columns:1fr; gap:16px;">
+
+      <div style="background:#241B52; border-radius:20px; padding:26px 22px 24px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px;">
+        <div style="background:#FFE500; color:#4B1F7A; font-weight:800; font-size:14px; text-transform:uppercase; letter-spacing:0.06em; padding:5px 16px 6px; border-radius:999px;">Compra 1 producto</div>
+        <i data-lucide="credit-card" style="width:44px; height:44px; color:#FFE500;"></i>
+        <div style="font-family:'Montserrat',sans-serif; font-weight:900; font-size:30px; line-height:1.05; text-transform:uppercase;">Tarjeta regalo<br>de <span style="color:#FFE500;">20&nbsp;€</span></div>
+      </div>
+
+      <div style="background:#241B52; border-radius:20px; padding:26px 22px 24px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px;">
+        <div style="background:#FFE500; color:#4B1F7A; font-weight:800; font-size:14px; text-transform:uppercase; letter-spacing:0.06em; padding:5px 16px 6px; border-radius:999px;">Compra 2 productos</div>
+        <div style="display:flex; align-items:center; gap:14px; color:#FFE500;">
+          <i data-lucide="credit-card" style="width:44px; height:44px;"></i>
+          <span style="font-weight:800; font-size:15px; color:#fff;">o</span>
+          <i data-lucide="package" style="width:44px; height:44px;"></i>
+        </div>
+        <div style="font-family:'Montserrat',sans-serif; font-weight:900; font-size:30px; line-height:1.05; text-transform:uppercase;">Tarjeta regalo<br>de <span style="color:#FFE500;">30&nbsp;€</span></div>
+        <div style="font-weight:600; font-size:16px; color:#E5D6FF; line-height:1.3;">o un lote de productos Cillit Bang.<br><strong style="color:#FFE500;">¡Tú eliges!</strong></div>
+      </div>
+
+      <div style="background:#FFE500; color:#38155E; border-radius:20px; padding:26px 22px 24px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px; box-shadow:0 12px 30px rgba(0,0,0,0.3);">
+        <div style="background:#38155E; color:#FFE500; font-weight:800; font-size:14px; text-transform:uppercase; letter-spacing:0.06em; padding:5px 16px 6px; border-radius:999px;">Compra 3 productos</div>
+        <div style="display:flex; align-items:center; gap:14px; color:#C1121F;">
+          <i data-lucide="credit-card" style="width:44px; height:44px;"></i>
+          <span style="font-weight:800; font-size:15px; color:#38155E;">o</span>
+          <i data-lucide="sparkles" style="width:44px; height:44px;"></i>
+        </div>
+        <div style="font-family:'Montserrat',sans-serif; font-weight:900; font-size:30px; line-height:1.05; text-transform:uppercase;">Tarjeta regalo<br>de <span style="color:#C1121F;">100&nbsp;€</span></div>
+        <div style="font-weight:600; font-size:16px; line-height:1.3;">o una limpieza a domicilio valorada en 100&nbsp;€.<br><strong style="color:#C1121F;">¡Tú eliges!</strong></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ PASOS ============ -->
+  <section style="max-width:1180px; margin:0 auto; padding:34px 20px 12px;">
+    <h2 style="margin:0 0 22px; font-family:'Montserrat',sans-serif; font-weight:900; text-transform:uppercase; font-size:clamp(24px,5.4vw,40px); text-align:center; line-height:1.05;">¿Cómo funciona?</h2>
+    <div id="cb-pasos-grid" style="display:grid; grid-template-columns:1fr; gap:16px;">
+
+      <div style="background:#241B52; border-radius:20px; padding:28px 22px 26px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px;">
+        <div style="width:56px; height:56px; border-radius:999px; background:#5B2A86; border:3px solid rgba(255,255,255,0.75); color:#fff; font-family:'Montserrat',sans-serif; font-weight:900; font-size:26px; display:flex; align-items:center; justify-content:center;">1</div>
+        <div style="font-family:'Montserrat',sans-serif; font-weight:900; font-size:26px; text-transform:uppercase; line-height:1.05;">Compra</div>
+        <i data-lucide="shopping-cart" style="width:42px; height:42px; color:#FFE500;"></i>
+        <div style="font-weight:600; font-size:16px; color:#E5D6FF; line-height:1.35;">1, 2 o 3 productos Cillit Bang en un mismo ticket</div>
+      </div>
+
+      <div style="background:#241B52; border-radius:20px; padding:28px 22px 26px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px;">
+        <div style="width:56px; height:56px; border-radius:999px; background:#5B2A86; border:3px solid rgba(255,255,255,0.75); color:#fff; font-family:'Montserrat',sans-serif; font-weight:900; font-size:26px; display:flex; align-items:center; justify-content:center;">2</div>
+        <div style="font-family:'Montserrat',sans-serif; font-weight:900; font-size:26px; text-transform:uppercase; line-height:1.05;">Sube tu ticket</div>
+        <i data-lucide="receipt-euro" style="width:42px; height:42px; color:#FFE500;"></i>
+        <div style="font-weight:600; font-size:16px; color:#E5D6FF; line-height:1.35;">Con tus datos a través del formulario de participación</div>
+      </div>
+
+      <div style="background:#FFE500; color:#38155E; border-radius:20px; padding:28px 22px 26px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px; box-shadow:0 12px 30px rgba(0,0,0,0.3);">
+        <div style="width:56px; height:56px; border-radius:999px; background:#5B2A86; border:3px solid rgba(255,255,255,0.75); color:#fff; font-family:'Montserrat',sans-serif; font-weight:900; font-size:26px; display:flex; align-items:center; justify-content:center;">3</div>
+        <div style="font-family:'Montserrat',sans-serif; font-weight:900; font-size:26px; text-transform:uppercase; line-height:1.05; color:#C1121F;">Gana</div>
+        <i data-lucide="gift" style="width:42px; height:42px; color:#C1121F;"></i>
+        <div style="font-weight:700; font-size:16px; line-height:1.35;">Tarjetas regalo de hasta 100&nbsp;€, lotes de producto o una limpieza a domicilio</div>
+      </div>
+
+    </div>
+    <p style="margin:18px auto 0; max-width:620px; text-align:center; font-size:14px; color:#C9B4EC; line-height:1.4;">Promoción válida hasta agotar los 150 premios. Con la compra de 2 o 3 productos podrás elegir tu premio. Consulta las bases legales.</p>
+  </section>
+
+  <!-- ============ PRE-FOOTER ============ -->
+  <img src="uploads/img_prefooter.png" alt="¡Cuantos más retos hagas, más premios ganas! Tarjetas regalo, limpieza a domicilio y lotes Cillit Bang" style="display:block; width:100%; height:auto; margin-top:30px;">
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="margin-top:0; background:#2B0F4D; border-top:1px solid rgba(255,255,255,0.08);">
+    <div id="cb-footer-inner" style="max-width:1180px; margin:0 auto; padding:24px 20px calc(130px + env(safe-area-inset-bottom)); display:flex; flex-direction:column; align-items:center; gap:16px;">
+      <img src="uploads/logo_samplia_footer.png" alt="Samplia" style="height:34px; width:auto; display:block;">
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px 22px; font-weight:600; font-size:14px;">
+        <a href="#">Bases legales</a>
+        <a href="https://www.airwickcashback.com/privacidad.pdf" target="_blank" rel="noopener">Política de privacidad</a>
+      </div>
+      <div style="font-weight:400; font-size:12px; color:#B79ADB; text-align:center;">© 2026 Samplia · Promoción sujeta a bases legales.</div>
+    </div>
+  </footer>
+
+  <!-- ============ STICKY CTA ============ -->
+  <div style="position:fixed; left:0; right:0; bottom:0; z-index:50; padding:14px 20px calc(14px + env(safe-area-inset-bottom)); display:flex; justify-content:center; background:transparent; pointer-events:none;">
+    <button id="cb-cta-btn" type="button" onClick="{{ onParticipar }}" style="pointer-events:auto; width:100%; max-width:440px; border:none; cursor:pointer; background:#FFE500; color:#38155E; font-family:'Montserrat','Barlow',sans-serif; font-weight:900; font-size:18px; text-transform:uppercase; letter-spacing:0.02em; padding:16px 40px; border-radius:999px; box-shadow:0 6px 18px rgba(0,0,0,0.4); transition:transform 120ms, background 220ms;" style-hover="background:#FFD900;" style-active="transform:scale(0.97);">Quiero participar</button>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;urlParticipacion&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://participa.samplia.com/&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Participación&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const tryIcons = () => {
+      if (window.lucide) { window.lucide.createIcons(); } else { setTimeout(tryIcons, 200); }
+    };
+    tryIcons();
+  }
+  renderVals() {
+    return {
+      onParticipar: () => { window.open(this.props.urlParticipacion ?? 'https://participa.samplia.com/', '_blank', 'noopener'); },
+    };
+  }
+}
+</script>
+</body>
+</html>
