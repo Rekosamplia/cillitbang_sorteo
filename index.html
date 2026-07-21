@@ -23,8 +23,8 @@
   a:hover { color: #ffffff; }
   /* ---- Desktop enhancements ---- */
   @media (min-width: 860px) {
-    #cb-logo { width: 170px !important; top: 14px !important; left: 32px !important; }
-    #cb-titular-bar { padding: 26px 210px 22px !important; }
+    #cb-logo { width: 130px !important; left: 32px !important; }
+    #cb-titular-bar { padding: 30px 200px 28px !important; min-height: 150px; display: flex; align-items: center; justify-content: center; }
     #cb-premios-grid { grid-template-columns: repeat(3, 1fr) !important; }
     #cb-pasos-grid { grid-template-columns: repeat(2, 1fr) !important; max-width: 800px; margin: 0 auto; }
     #cb-footer-inner { max-width: 760px !important; }
@@ -36,10 +36,9 @@
 
   <!-- ============ HERO ============ -->
   <section style="position:relative;">
-    <img id="cb-logo" src="uploads/logoCillit.png" alt="Cillit Bang Expert" style="position:absolute; top:8px; left:14px; width:96px; height:auto; z-index:5; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.45));">
     <div id="cb-titular-bar" style="position:relative; z-index:2; background:#38155E; text-align:center; padding:18px 20px 16px 116px; padding-right:20px;">
+      <img id="cb-logo" src="uploads/logoCillit.png" alt="Cillit Bang Expert" style="position:absolute; top:50%; transform:translateY(-50%); left:14px; width:88px; height:auto; z-index:5; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.45));">
       <div style="font-family:'Montserrat',sans-serif; font-weight:900; text-transform:uppercase; font-size:clamp(20px,4.6vw,42px); line-height:1.08; letter-spacing:0.01em; text-shadow:0 3px 10px rgba(0,0,0,0.35);">Compra Cillit Bang y gana<br>hasta <span style="color:#FFE500;">100&nbsp;€</span> en premios</div>
-      <div style="margin-top: 8px; display: inline-block; color: #fff; font-weight: 800; font-size: clamp(13px,3.2vw,17px); text-transform: uppercase; letter-spacing: 0.04em; padding: 5px 16px 6px; border-radius: 999px; background-color: #C73346">Se reparten 150 premios</div>
     </div>
     <img src="uploads/header.png" alt="Únete al #RetoBang — gama Cillit Bang Expert" style="display:block; width:100%; height:auto;">
   </section>
