@@ -30,9 +30,16 @@
     #cb-pasos-grid { grid-template-columns: repeat(2, 1fr) !important; max-width: 800px; margin: 0 auto; }
     #cb-footer-inner { max-width: 760px !important; }
     #cb-cta-btn { width: auto !important; min-width: 340px; }
-    #cb-modal-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 34px 30px !important; align-items: stretch; }
+    #cb-modal-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 20px !important; align-items: stretch; }
     #cb-modal-grid > div { height: 100%; }
-    #cb-modal-grid img { height: 140px !important; object-fit: contain; width: auto !important; max-width: 100%; }
+    #cb-modal-grid > div > div:first-child { height: 130px; }
+    #cb-modal-grid img { height: 112px !important; object-fit: contain; width: auto !important; max-width: 100%; }
+  }
+  @media (min-width: 1200px) {
+    #cb-modal-grid { grid-template-columns: repeat(4, 1fr) !important; gap: 18px !important; }
+    #cb-modal-grid > div { max-width: none !important; }
+    #cb-modal-title { margin-bottom: 22px !important; }
+    #cb-modal-panel { padding: 26px 22px !important; }
   }
   @media (min-width: 860px) and (max-width: 1080px) {
     #cb-titular-bar { padding: 26px 90px 24px 150px !important; }
@@ -141,17 +148,17 @@
   <!-- ============ MODAL GAMA ============ -->
   <sc-if value="{{ modalOpen }}" hint-placeholder-val="{{ false }}">
     <div onClick="{{ closeModal }}" onWheel="{{ blockScroll }}" onTouchMove="{{ blockScroll }}" style="position:fixed; inset:0; z-index:80; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; padding:20px;">
-      <div onClick="{{ stopClick }}" role="dialog" aria-modal="true" aria-label="Descubre la gama RetoBang" style="position:relative; background-color:#38155E; background-image:url('uploads/radial.png'); background-repeat:no-repeat; background-position:center 22%; background-size:min(1000px,115%) auto; background-blend-mode:screen; color:#fff; border-radius:20px; width:96vw; max-width:96vw; height:92vh; max-height:92vh; overflow-y:auto; padding:44px 24px 44px; box-shadow:0 24px 60px rgba(0,0,0,0.45); text-align:center;">
+      <div onClick="{{ stopClick }}" role="dialog" aria-modal="true" aria-label="Descubre la gama RetoBang" style="position:relative; background-color:#38155E; background-image:url('uploads/radial.png'); background-repeat:no-repeat; background-position:center 22%; background-size:min(1000px,115%) auto; background-blend-mode:screen; color:#fff; border-radius:20px; width:96vw; max-width:96vw; height:92vh; max-height:92vh; overflow-y:auto; padding:44px 24px 44px; box-shadow:0 24px 60px rgba(0,0,0,0.45); text-align:center;" id="cb-modal-panel">
         <button type="button" aria-label="Cerrar" onClick="{{ closeModal }}" style="position:absolute; top:14px; right:14px; width:36px; height:36px; border:none; border-radius:999px; background:rgba(255,255,255,0.15); color:#fff; font-size:20px; line-height:1; cursor:pointer;" style-hover="background:rgba(255,255,255,0.28);">×</button>
-        <h3 style="margin:0 auto 46px; padding:0 44px; max-width:900px; font-family:'Montserrat',sans-serif; font-weight:900; text-transform:uppercase; font-size:clamp(24px,5.4vw,40px); line-height:1.05; color:#FFE500;">Descubre la gama RetoBang</h3>
+        <h3 id="cb-modal-title" style="margin:0 auto 46px; padding:0 44px; max-width:900px; font-family:'Montserrat',sans-serif; font-weight:900; text-transform:uppercase; font-size:clamp(24px,5.4vw,40px); line-height:1.05; color:#FFE500;">Descubre la gama RetoBang</h3>
         <div id="cb-modal-grid" style="display:grid; grid-template-columns:1fr; gap:24px; max-width:1400px; margin:0 auto;">
 
           <div style="display:flex; flex-direction:column; align-items:stretch; gap:0; width:100%; max-width:520px; margin:0 auto; background:#C67942; border:1px solid rgba(255,255,255,0.16); border-radius:20px; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,0.25);">
-            <div style="width:100%; background:rgba(255,255,255,0.85); display:flex; align-items:center; justify-content:center; padding:12px 16px;"><img src="uploads/cal_suciedad.png" alt="Cillit Bang Cal y Suciedad" style="width:130px; max-width:100%; height:auto; display:block;"></div>
-            <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:20px 20px 24px; background:#C67942; color:#fff;">
-              <div style="font-weight:800; font-size:28px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang Cal y Suciedad</div>
-              <div style="width:140px; height:1px; background:#fff; margin:18px auto;"></div>
-              <p style="margin:0 0 20px; font-size:15px; line-height:1.5;">Elimina la <strong style="color:#fff;">cal</strong> y la <strong style="color:#fff;">suciedad incrustada</strong> para devolver el <strong style="color:#fff;">brillo</strong> al baño.</p>
+            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/cal_suciedad.png" alt="Cillit Bang Cal y Suciedad" style="width:130px; max-width:100%; height:auto; display:block;"></div>
+            <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:16px 18px 20px; background:#C67942; color:#fff;">
+              <div style="font-weight:800; font-size:22px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang Cal y Suciedad</div>
+              <div style="width:140px; height:1px; background:#fff; margin:12px auto;"></div>
+              <p style="margin:0 0 14px; font-size:15px; line-height:1.45;">Elimina la <strong style="color:#fff;">cal</strong> y la <strong style="color:#fff;">suciedad incrustada</strong> para devolver el <strong style="color:#fff;">brillo</strong> al baño.</p>
               <ul style="margin:0; padding-left:20px; list-style:disc; font-size:15px; line-height:1.5; display:flex; flex-direction:column; gap:3px;">
                 <li>Acaba con la <strong style="color:#fff;">cal</strong>, los <strong style="color:#fff;">restos de jabón</strong> y la suciedad difícil</li>
                 <li>Ideal para <strong style="color:#fff;">duchas, bañeras, lavabos, inodoros y azulejos</strong></li>
@@ -161,11 +168,11 @@
           </div>
 
           <div style="display:flex; flex-direction:column; align-items:stretch; gap:0; width:100%; max-width:520px; margin:0 auto; background:#2F2D33; border:1px solid rgba(255,255,255,0.16); border-radius:20px; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,0.25);">
-            <div style="width:100%; background:rgba(255,255,255,0.85); display:flex; align-items:center; justify-content:center; padding:12px 16px;"><img src="uploads/suciedad_manchas_humedad.png" alt="Cillit Bang Suciedad y Manchas de Humedad" style="width:130px; max-width:100%; height:auto; display:block;"></div>
-            <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:20px 20px 24px; background:#2F2D33; color:#fff;">
-              <div style="font-weight:800; font-size:28px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang Suciedad y Manchas de Humedad</div>
-              <div style="width:140px; height:1px; background:#fff; margin:18px auto;"></div>
-              <p style="margin:0 0 20px; font-size:15px; line-height:1.5;">Elimina <strong style="color:#fff;">moho</strong> y las <strong style="color:#fff;">manchas de humedad</strong> de forma <strong style="color:#fff;">rápida y eficaz</strong>, <strong style="color:#fff;">sin necesidad de frotar</strong>.</p>
+            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/suciedad_manchas_humedad.png" alt="Cillit Bang Suciedad y Manchas de Humedad" style="width:130px; max-width:100%; height:auto; display:block;"></div>
+            <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:16px 18px 20px; background:#2F2D33; color:#fff;">
+              <div style="font-weight:800; font-size:22px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang Suciedad y Manchas de Humedad</div>
+              <div style="width:140px; height:1px; background:#fff; margin:12px auto;"></div>
+              <p style="margin:0 0 14px; font-size:15px; line-height:1.45;">Elimina <strong style="color:#fff;">moho</strong> y las <strong style="color:#fff;">manchas de humedad</strong> de forma <strong style="color:#fff;">rápida y eficaz</strong>, <strong style="color:#fff;">sin necesidad de frotar</strong>.</p>
               <ul style="margin:0; padding-left:20px; list-style:disc; font-size:15px; line-height:1.5; display:flex; flex-direction:column; gap:3px;">
                 <li>Combate el <strong style="color:#fff;">moho</strong> y las manchas difíciles causadas por la <strong style="color:#fff;">humedad</strong></li>
                 <li>Ideal para <strong style="color:#fff;">juntas, baños, lavabos, fregaderos y superficies húmedas</strong></li>
@@ -175,11 +182,11 @@
           </div>
 
           <div style="display:flex; flex-direction:column; align-items:stretch; gap:0; width:100%; max-width:520px; margin:0 auto; background:#91B45F; border:1px solid rgba(255,255,255,0.16); border-radius:20px; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,0.25);">
-            <div style="width:100%; background:rgba(255,255,255,0.85); display:flex; align-items:center; justify-content:center; padding:12px 16px;"><img src="uploads/quitagrasas.png" alt="Cillit Bang Quitagrasas" style="width:130px; max-width:100%; height:auto; display:block;"></div>
-            <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:20px 20px 24px; background:#91B45F; color:#fff;">
-              <div style="font-weight:800; font-size:28px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang Quitagrasas</div>
-              <div style="width:140px; height:1px; background:#fff; margin:18px auto;"></div>
-              <p style="margin:0 0 20px; font-size:15px; line-height:1.5;">Acaba con la <strong style="color:#fff;">grasa incrustada</strong> y la suciedad más difícil de la <strong style="color:#fff;">cocina</strong>.</p>
+            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/quitagrasas.png" alt="Cillit Bang Quitagrasas" style="width:130px; max-width:100%; height:auto; display:block;"></div>
+            <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:16px 18px 20px; background:#91B45F; color:#fff;">
+              <div style="font-weight:800; font-size:22px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang Quitagrasas</div>
+              <div style="width:140px; height:1px; background:#fff; margin:12px auto;"></div>
+              <p style="margin:0 0 14px; font-size:15px; line-height:1.45;">Acaba con la <strong style="color:#fff;">grasa incrustada</strong> y la suciedad más difícil de la <strong style="color:#fff;">cocina</strong>.</p>
               <ul style="margin:0; padding-left:20px; list-style:disc; font-size:15px; line-height:1.5; display:flex; flex-direction:column; gap:3px;">
                 <li><strong style="color:#fff;">Acción rápida</strong> sobre la grasa persistente</li>
                 <li>Ideal para <strong style="color:#fff;">hornos, campanas, placas y encimeras</strong></li>
@@ -189,11 +196,11 @@
           </div>
 
           <div style="display:flex; flex-direction:column; align-items:stretch; gap:0; width:100%; max-width:520px; margin:0 auto; background:#4F357F; border:1px solid rgba(255,255,255,0.16); border-radius:20px; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,0.25);">
-            <div style="width:100%; background:rgba(255,255,255,0.85); display:flex; align-items:center; justify-content:center; padding:12px 16px;"><img src="uploads/Cillit-Bang-pasta.png" alt="Cillit Bang Pasta Ultra Limpiadora Multiusos" style="width:250px; max-width:100%; height:auto; display:block;"></div>
-            <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:20px 20px 24px; background:#4F357F; color:#fff;">
-              <div style="font-weight:800; font-size:28px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang Pasta Ultra Limpiadora Multiusos</div>
-              <div style="width:140px; height:1px; background:#fff; margin:18px auto;"></div>
-              <p style="margin:0 0 20px; font-size:15px; line-height:1.5;">La solución <strong style="color:#fff;">multiusos</strong> para eliminar la <strong style="color:#fff;">suciedad más resistente</strong> en todo el <strong style="color:#fff;">hogar</strong>.</p>
+            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/Cillit-Bang-pasta.png" alt="Cillit Bang Pasta Ultra Limpiadora Multiusos" style="width:250px; max-width:100%; height:auto; display:block;"></div>
+            <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:16px 18px 20px; background:#4F357F; color:#fff;">
+              <div style="font-weight:800; font-size:22px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang Pasta Ultra Limpiadora Multiusos</div>
+              <div style="width:140px; height:1px; background:#fff; margin:12px auto;"></div>
+              <p style="margin:0 0 14px; font-size:15px; line-height:1.45;">La solución <strong style="color:#fff;">multiusos</strong> para eliminar la <strong style="color:#fff;">suciedad más resistente</strong> en todo el <strong style="color:#fff;">hogar</strong>.</p>
               <ul style="margin:0; padding-left:20px; list-style:disc; font-size:15px; line-height:1.5; display:flex; flex-direction:column; gap:3px;">
                 <li>Elimina <strong style="color:#fff;">manchas</strong> y <strong style="color:#fff;">residuos difíciles</strong></li>
                 <li>Ideal para <strong style="color:#fff;">cocina, baño, barbacoa, horno y muchas más superficies</strong></li>
