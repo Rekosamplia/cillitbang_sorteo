@@ -8,7 +8,7 @@
 <body>
 <x-dc>
 <helmet>
-<link rel="icon" type="image/png" href="uploads/logoCillit.png">
+<link rel="icon" type="image/png" href="uploads/logoCillit.webp">
 <link rel="stylesheet" href="_ds/samplia-design-system-3b8c391a-4304-4ac7-a11b-0dd4cb4af9a4/colors_and_type.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -36,13 +36,15 @@
     #cb-modal-grid img { height: 112px !important; object-fit: contain; width: auto !important; max-width: 100%; }
   }
   .cb-qg-br { display: none; }
+  .cb-tsp, .cb-t3d { display: none; }
+  @media (min-width: 860px) { .cb-t1, .cb-t2, .cb-t3 { display: none; } .cb-tsp { display: inline; } .cb-t3d { display: inline; } }
   @media (min-width: 900px) {
     .cb-qg-br { display: inline; }
     .cb-qg-sp { display: none; }
     #cb-modal-grid { grid-template-columns: repeat(4, 1fr) !important; gap: clamp(12px, 1.6vh, 18px) !important; }
     #cb-modal-grid > div { max-width: none !important; }
     #cb-modal-title { font-size: clamp(22px, 3.4vh, 34px) !important; margin-bottom: clamp(14px, 2.6vh, 30px) !important; }
-    #cb-modal-panel { padding: clamp(22px, 3.4vh, 40px) clamp(16px, 2vw, 26px) !important; }
+    #cb-modal-panel { padding: clamp(22px, 3.4vh, 40px) clamp(16px, 2vw, 26px) !important; justify-content: center !important; }
     #cb-modal-grid > div > div:first-child { height: clamp(88px, 15vh, 130px) !important; padding-top: clamp(8px, 1.4vh, 12px) !important; }
     #cb-modal-grid img { height: clamp(74px, 13vh, 112px) !important; }
     #cb-modal-grid > div > div:last-child { padding: clamp(12px, 1.8vh, 18px) clamp(12px, 1vw, 18px) clamp(14px, 2vh, 20px) !important; }
@@ -72,10 +74,10 @@
       </div>
     </sc-if>
     <div id="cb-titular-bar" style="position:relative; z-index:2; background:#38155E; text-align:center; padding:18px 70px 16px 116px;">
-      <img id="cb-logo" src="uploads/logoCillit.png" alt="Cillit Bang Expert" style="position:absolute; top:50%; transform:translateY(-50%); left:14px; width:88px; height:auto; z-index:5; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.45));">
-      <div style="font-family:'Montserrat',sans-serif; font-weight:900; text-transform:uppercase; font-size:clamp(20px,4.6vw,42px); line-height:1.08; letter-spacing:0.01em; text-shadow:0 3px 10px rgba(0,0,0,0.35);">Compra Cillit Bang y gana<br>hasta <span style="color:#FFE500;">100&nbsp;€</span> en premios</div>
+      <img id="cb-logo" src="uploads/logoCillit.webp" alt="Cillit Bang Expert" style="position:absolute; top:50%; transform:translateY(-50%); left:14px; width:88px; height:auto; z-index:5; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.45));">
+      <div style="font-family:'Montserrat',sans-serif; font-weight:900; text-transform:uppercase; font-size:clamp(20px,4.6vw,42px); line-height:1.08; letter-spacing:0.01em; text-shadow:0 3px 10px rgba(0,0,0,0.35);">Compra Cillit Bang y<span class="cb-tsp"> </span><br class="cb-t1">gana<span class="cb-t3"> </span><br class="cb-t3d">hasta <span style="color:#FFE500;">100&nbsp;€</span><span class="cb-tsp"> </span><br class="cb-t2">en premios</div>
     </div>
-    <img src="uploads/header.png" alt="Únete al #RetoBang — gama Cillit Bang Expert" style="display:block; width:100%; height:auto;">
+    <img src="uploads/header-386605c2.webp" alt="Únete al #RetoBang — gama Cillit Bang Expert" style="display:block; width:100%; height:auto;">
   </section>
 
   <!-- ============ PREMIOS ============ -->
@@ -141,15 +143,15 @@
   </section>
 
   <!-- ============ PRE-FOOTER ============ -->
-  <img src="uploads/img_prefooter.png" alt="¡Cuantos más retos hagas, más premios ganas! Tarjetas regalo, limpieza a domicilio y lotes Cillit Bang" style="display:block; width:100%; height:auto; margin-top:30px;">
+  <img src="uploads/img_prefooter-a48877a6.webp" alt="¡Cuantos más retos hagas, más premios ganas! Tarjetas regalo, limpieza a domicilio y lotes Cillit Bang" style="display:block; width:100%; height:auto; margin-top:30px;">
 
   <!-- ============ FOOTER ============ -->
   <footer style="margin-top:0; background:#2B0F4D; border-top:1px solid rgba(255,255,255,0.08);">
     <div id="cb-footer-inner" style="max-width:1180px; margin:0 auto; padding:24px 20px calc(130px + env(safe-area-inset-bottom)); display:flex; flex-direction:column; align-items:center; gap:16px;">
-      <img src="uploads/logo_samplia_footer.png" alt="Samplia" style="height:34px; width:auto; display:block;">
+      <img src="uploads/logo_samplia_footer.webp" alt="Samplia" style="height:34px; width:auto; display:block;">
       <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px 22px; font-weight:600; font-size:14px;">
-        <a href="bbll_cillitbang.html">Bases legales</a>
-        <a href="privacidad_cillitbang.html">Política de privacidad</a>
+        <a href="#">Bases legales</a>
+        <a href="https://www.airwickcashback.com/privacidad.pdf" target="_blank" rel="noopener">Política de privacidad</a>
       </div>
       <div style="font-weight:400; font-size:12px; color:#B79ADB; text-align:center;">© 2026 Samplia · Promoción sujeta a bases legales.</div>
     </div>
@@ -158,13 +160,13 @@
   <!-- ============ MODAL GAMA ============ -->
   <sc-if value="{{ modalOpen }}" hint-placeholder-val="{{ false }}">
     <div onClick="{{ closeModal }}" onWheel="{{ blockScroll }}" onTouchMove="{{ blockScroll }}" style="position:fixed; inset:0; z-index:80; background:rgba(0,0,0,0.6); display:flex; align-items:center; justify-content:center; padding:20px;">
-      <div onClick="{{ stopClick }}" role="dialog" aria-modal="true" aria-label="Descubre la gama RetoBang" style="position:relative; background-color:#38155E; background-image:url('uploads/radial.png'); background-repeat:no-repeat; background-position:center 22%; background-size:min(1000px,115%) auto; background-blend-mode:screen; color:#fff; border-radius:20px; width:96vw; max-width:96vw; height:92vh; max-height:92vh; overflow-y:auto; padding:44px 24px 44px; box-shadow:0 24px 60px rgba(0,0,0,0.45); text-align:center;" id="cb-modal-panel">
+      <div onClick="{{ stopClick }}" role="dialog" aria-modal="true" aria-label="Descubre la gama RetoBang" style="position:relative; background-color:#38155E; background-image:url('uploads/radial.webp'); background-repeat:no-repeat; background-position:center 22%; background-size:min(1000px,115%) auto; background-blend-mode:screen; color:#fff; border-radius:20px; width:96vw; max-width:96vw; height:92vh; max-height:92vh; overflow-y:auto; padding:44px 24px; box-shadow:0 24px 60px rgba(0,0,0,0.45); text-align:center; display:flex; flex-direction:column; justify-content:center;" id="cb-modal-panel">
         <button type="button" aria-label="Cerrar" onClick="{{ closeModal }}" style="position:absolute; top:14px; right:14px; width:36px; height:36px; border:none; border-radius:999px; background:rgba(255,255,255,0.15); color:#fff; font-size:20px; line-height:1; cursor:pointer;" style-hover="background:rgba(255,255,255,0.28);">×</button>
         <h3 id="cb-modal-title" style="margin:0 auto 46px; padding:0 44px; max-width:900px; font-family:'Montserrat',sans-serif; font-weight:900; text-transform:uppercase; font-size:clamp(24px,5.4vw,40px); line-height:1.05; color:#FFE500;">Descubre la gama RetoBang</h3>
         <div id="cb-modal-grid" style="display:grid; grid-template-columns:1fr; gap:24px; max-width:1400px; margin:0 auto;">
 
           <div style="display:flex; flex-direction:column; align-items:stretch; gap:0; width:100%; max-width:520px; margin:0 auto; background:#C67942; border:1px solid rgba(255,255,255,0.16); border-radius:20px; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,0.25);">
-            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/cal_suciedad.png" alt="Cillit Bang Cal y Suciedad" style="width:130px; max-width:100%; height:auto; display:block;"></div>
+            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/cal_suciedad.webp" alt="Cillit Bang Cal y Suciedad" style="width:130px; max-width:100%; height:auto; display:block;"></div>
             <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:16px 18px 20px; background:#C67942; color:#fff;">
               <div style="font-weight:800; font-size:22px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang Cal y Suciedad</div>
               <div style="width:140px; height:1px; background:#fff; margin:12px auto;"></div>
@@ -178,7 +180,7 @@
           </div>
 
           <div style="display:flex; flex-direction:column; align-items:stretch; gap:0; width:100%; max-width:520px; margin:0 auto; background:#2F2D33; border:1px solid rgba(255,255,255,0.16); border-radius:20px; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,0.25);">
-            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/suciedad_manchas_humedad.png" alt="Cillit Bang Suciedad y Manchas de Humedad" style="width:130px; max-width:100%; height:auto; display:block;"></div>
+            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/suciedad_manchas_humedad.webp" alt="Cillit Bang Suciedad y Manchas de Humedad" style="width:130px; max-width:100%; height:auto; display:block;"></div>
             <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:16px 18px 20px; background:#2F2D33; color:#fff;">
               <div style="font-weight:800; font-size:22px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang Suciedad y Manchas de Humedad</div>
               <div style="width:140px; height:1px; background:#fff; margin:12px auto;"></div>
@@ -192,7 +194,7 @@
           </div>
 
           <div style="display:flex; flex-direction:column; align-items:stretch; gap:0; width:100%; max-width:520px; margin:0 auto; background:#91B45F; border:1px solid rgba(255,255,255,0.16); border-radius:20px; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,0.25);">
-            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/quitagrasas.png" alt="Cillit Bang Quitagrasas" style="width:130px; max-width:100%; height:auto; display:block;"></div>
+            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/quitagrasas.webp" alt="Cillit Bang Quitagrasas" style="width:130px; max-width:100%; height:auto; display:block;"></div>
             <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:16px 18px 20px; background:#91B45F; color:#fff;">
               <div style="font-weight:800; font-size:22px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang<span class="cb-qg-sp"> </span><br class="cb-qg-br">Quitagrasas</div>
               <div style="width:140px; height:1px; background:#fff; margin:12px auto;"></div>
@@ -206,7 +208,7 @@
           </div>
 
           <div style="display:flex; flex-direction:column; align-items:stretch; gap:0; width:100%; max-width:520px; margin:0 auto; background:#4F357F; border:1px solid rgba(255,255,255,0.16); border-radius:20px; overflow:hidden; box-shadow:0 10px 26px rgba(0,0,0,0.25);">
-            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/Cillit-Bang-pasta.png" alt="Cillit Bang Pasta Ultra Limpiadora Multiusos" style="width:250px; max-width:100%; height:auto; display:block;"></div>
+            <div style="width:100%; background:rgba(255,255,255,0.6); display:flex; align-items:flex-end; justify-content:center; padding:12px 16px 0;"><img src="uploads/Cillit-Bang-pasta.webp" alt="Cillit Bang Pasta Ultra Limpiadora Multiusos" style="width:250px; max-width:100%; height:auto; display:block;"></div>
             <div style="width:100%; overflow-wrap:break-word; text-align:left; padding:16px 18px 20px; background:#4F357F; color:#fff;">
               <div style="font-weight:800; font-size:22px; line-height:1.15; color:#fff; margin:0; text-align:center; width:100%;">Cillit Bang Pasta Ultra Limpiadora Multiusos</div>
               <div style="width:140px; height:1px; background:#fff; margin:12px auto;"></div>
